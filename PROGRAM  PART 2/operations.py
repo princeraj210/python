@@ -10,5 +10,5 @@ for i in range(lower, upper+1):
         digit = temp % 10
         sum += digit ** order
         temp //= 10
-        if num == sum:
-            print(i)
+    if i == sum:
+        print(i)
