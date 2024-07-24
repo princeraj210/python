@@ -84,9 +84,54 @@
 
 
 # check wheather a string is pelindrome or not -----------------P38
-word = input("enter a word here:")
-rev = word[::-1]  # it reverse the string
-if word == rev:
-    print("it is a pelindrome word.")
-else:
-    print("it is not pelindrome word.")
+# word = input("enter a word here:")
+# rev = word[::-1]  # it reverse the string
+# if word == rev:
+#     print("it is a pelindrome word.")
+# else:
+#     print("it is not pelindrome word.")
+
+
+# remove punctuation from string ---------------------------P39
+# punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+# string = input("enter your sentance:")
+# empty_string = ""
+# for i in string:
+#     if i not in punc:
+#         empty_string += i
+# print(empty_string)
+
+
+# program to multiply two matrices-----------------------P40
+# A = [[1, 2, 3],
+#      [4, 5, 6],
+#      [7, 8, 9]]
+# B = [[1, 2, 1, 1],
+#      [4, 2, 1, 2],
+#      [6, 3, 4, 1]]
+# result = [[0, 0, 0, 0],
+#           [0, 0, 0, 0],
+#           [0, 0, 0, 0]]
+# for i in range(len(A)):
+#     for j in range(len(B[0])):
+#         for k in range(len(B)):
+#             result[i][j] += A[i][k]*B[k][j]
+# for i in result:
+#     print(i)
+
+# program to sort word in alphabetical number----------------P41
+# a = input("enter sentances here:")
+# w = a.split()
+# for i in range(len(w)):
+#     w[i] = w[i].lower()
+# w.sort()
+# for i in w:
+#     print(i)
+
+# python program to set different operations -------------------P42
+# A = {1, 2, 3, 6, 8, 9}
+# B = {3, 4, 5, 6, 7, 8}
+# print("the union is :", A | B)
+# print("the intersection is :", A & B)
+# print("the difference is :", A-B)
+# print("the symmetric diffrence is :", A ^ B)
