@@ -135,3 +135,86 @@
 # print("the intersection is :", A & B)
 # print("the difference is :", A-B)
 # print("the symmetric diffrence is :", A ^ B)
+
+# program to count the number of each vowels---------------------P43 PART 1
+# ~~~~~~~~~~~using dictionary~~~~~~~~~~~~~~~~~~
+# a = "hii my Name is PRince chaubey"
+# vowels = "aeiou"
+# a = a.casefold()
+# count = {}.fromkeys(vowels, 0)
+# for char in a:
+#     if char in count:
+#         count[char] += 1
+# print(count)
+
+# program to count the number of each vowels---------------------P43 PART 2
+# ~~~~~~~~~~~~~using list and dictionary comprehension~~~~~~~~~~~~~~
+# a = "Hii My name IS prince Chaubey"
+# vowels = "aeiou"
+# a = a.casefold()
+# count = {key: sum([1 for char in a if char == key])for key in vowels}
+# print(count)
+
+# program to find size(resolution ) of an image ----------------------P44
+# import PIL
+# from PIL import Image
+# img = PIL.image.open(
+#     "C:/Users/pc/Desktop/professional profile/Prince Portfolio/Png Image/IMG_20230412_211424")
+# width , height = img.size
+# print(width , "x" , height)
+
+# Program to merge two dictionary -----------------------------P45
+# solution 1 using | operator
+# dict1 = {"john": 89, "lisa": 99}
+# dict2 = {"lisa": 94, "peter": 78}
+# print(dict1 | dict2)
+
+# aolution 2 using **operator
+# dict1 = {"john": 89, "lisa": 99}
+# dict2 = {"lisa": 94, "peter": 78}
+# print({**dict1, **dict2})
+
+# solution 3 using copy() and update() method
+# dict1 = {"john": 89, "lisa": 99}
+# dict2 = {"lisa": 94, "peter": 78}
+# dict3 = dict2.copy()
+# dict3.update(dict1)
+# print(dict3)
+
+# program to access index of a list using for loop-----------------P46
+# solution 1 using enumerate method
+# list1 = [23, 5, 67, 98, 32]
+# for index, value in enumerate(list1, start=1):
+#     print(index, "-", value)
+
+# solution 2 not using enumerate function
+# list1 = [23, 5, 67, 98, 32]
+# for i in range(len(list1)):
+#     value = list1[i]
+#     print(i, value)
+
+
+# Program to slice a list -----------------------------P47
+# a = ["prince", "piyush", "adarsh", "shivam"]
+# slice = a[1:2]
+# print(slice)
+
+# program to itterate over dictionaries using for loop ----------------------P48
+# human = {"john": "male", "cristina": "female", "joe": "shemale"}
+# print(human)
+# solution 1 with .items
+
+# for key, value in human.items():
+#     print(key, ":" , value)
+# SOLUTION 2 WITH KEYS
+# for key in human:
+#     print(key, human[key])
+
+# solution 3 with key and values
+# for key in human.keys():
+#     print(key)
+# for i in human.values():
+#     print(i)
+
+
+# --------------------remove the comments except first line of every program and enjoy -----------------------
