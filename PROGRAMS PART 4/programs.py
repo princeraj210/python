@@ -89,4 +89,73 @@
 # print(date_time)
 # print(type(date_time))
 
-# program to gate last element of the list-----------------------------P57
+# program to get last element of the list-----------------------------P57
+# name = ["sonu", "monu", "saurabh", "munna"]
+# print(name[-1])
+
+# program to get substrikng from a string------------------------------P58
+# string = "hello my name is saurabh anand"
+# print(string[16:24])
+
+# print output without a newline -----------------------------------P59
+# print("hello my name is :", end="")
+# print("saurabh anand ")
+
+# check if a string is a valud keyword or not-------------------------P60
+# import keyword
+# words = ["hello", "keywords", "break", "saurabh", "sachin", "string", "lambda"]
+# for i in range(len(words)):
+#     if keyword.iskeyword(words[i]):
+#         print(words[i], "is a keywords in python")
+#     else:
+#         print(words[i], "is not a keywords in python")
+
+# python iterators along with next function-------------------------------P61
+# string = "sachin rao"
+# for i in string:
+#     print(i)
+# iterate = iter(string)
+# print(iterate.__next__())
+# print(iterate.__next__())
+# print(iterate.__next__())
+# print(next(iterate))
+
+# solution 2 creating iter function
+# class five:
+#     def __init__(self):
+#         self.num = 1
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         if self.num <= 5:
+#             value = self.num
+#             self.num += 1
+#             return value
+#         else:
+#             raise StopIteration
+
+
+# ff = five()
+# for i in ff:
+#     print(i)
+
+# list comparison --------------------------------------P62
+# avengers = ["ironman", "batman", "captainamerica", "thor", "groot", "antman"]
+# new_avenger = [i.upper() for i in avengers]
+# print(new_avenger)
+
+# m = [i for i in range(10)]
+# print(m)
+# k = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# new_list = []
+# for i in k:
+#     if i % 2 == 0:
+#         new_list.append(i)
+# print(new_list)
+# m = [i for i in range(10) if i % 2 == 0]
+# print(m)
+
+
+# --------------------remove the comments except first line of every program and enjoy -----------------------
